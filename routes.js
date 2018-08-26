@@ -16,5 +16,22 @@ module.exports = function(app) {
 		res.sendFile('cnit133.html', {root :'./public'})
 	});
 
+	app.get('/cs112', function(req, res) {
+		res.sendFile('cs112.html', {root :'./public'})
+	});
+
+	app.get('/cs150a', function(req, res) {
+		res.sendFile('cs150a.html', {root :'./public'})
+	});
+
+	app.get('/resume', function(req, res) {
+		res.sendFile('resume.html', {root :'./public'})
+	});
+
+	app.get('/blog', function(req, res) {
+		res.sendFile('blog.html', {root :'./public'})
+	});
+
+
 	app.use(express.static("public"));
 }
