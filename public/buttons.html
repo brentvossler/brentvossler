@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch/Case handling</title>
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- external JS files  -->
+	<script src="js/buttons.js"></script>
+	<!-- Inline JS for extra Credit -->
+	<script>
+		function buttonFunction() {
+			if(document.getElementById('fact2').checked == true) {
+			  alert("correct")
+			} else {
+				alert("try again")
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="center alert-padding">
+		<h2>Stupid things the president has said.</h2>
+		<!-- Buttons with switch -->
+		<form action="#">
+			<input type="button" id="quote1" value="Dumb Trump Quote 1"> 
+			<input type="button" id="quote2" value="Dumb Trump Quote 2">
+			<input type="button" id="quote3" value="Dumb Trump Quote 3">
+		</form>
+
+		<h2>Quiz</h2>
+		<p><b>Which of the following is a true fact about Trump?</b></p>
+		<!-- Buttons with if/else -->
+		<div class="left">
+			<form>
+				<input type="radio" id="fact1" name="quiz">
+				<label for="contactChoice1">He does not eat ketchup on his well-done steaks.</label>
+				<br>
+				<input type="radio" id="fact2" name="quiz"">
+				<label for="contactChoice2">More than 80% of all campaign donations in his lifetime has been to democratic candidates.</label>
+				<br>
+				<input type="radio" id="fact3" name="quiz">
+				<label for="contactChoice3">He is mature and responsible.</label>
+				<br>
+				<input type="radio" id="fact4" name="quiz">
+				<label for="contactChoice3">He did not win a Razzie award for Worst Supporting Actor for his role in Ghost Can’t Do It.</label>
+				<br>
+				<button onclick="buttonFunction()">Submit</button>
+			</form>
+		</div>
+</body>
+</html>

@@ -6,5 +6,9 @@ module.exports = function(app) {
 		res.sendFile('index.html', {root :'./public'})
 	});
 
+	app.get('/buttons', function(req, res) {
+		res.sendFile('buttons.html', {root :'./public'})
+	});
+
 	app.use(express.static("public"));
 }

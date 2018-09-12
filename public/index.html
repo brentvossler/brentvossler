@@ -11,26 +11,52 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        <link rel="stylesheet" href="/main.css"> 
-        <script src="/main.js"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- external JS files  -->
+        <script src="js/main.js"></script>
+        <script src="js/helloworld.js"></script>
+        <script src="js/buttons.js"></script>
     </head>
     
     <body>
+<!-- HOMEWORK 1 - SETUP WEBSITE -->
+        <div class="center">
+            <h1>Brent Vossler</h1>
+            <p>This site is deployed on Digital Ocean with MongoDB, ExpressJS, NodeJS. I have Vanilla JS, jQuery, AngularJS and ReactJS on certain pages for my coursework at CCSF.</p>
+            <p>-----------------------</p>
+        </div>
+        <br><br>
 
-        <h1>
-            <script> 
-                //this script is written inline
-                document.write("Hello World!");
-            </script>
-        </h1>
+<!-- Homework 2 - HELLO WORLD SCRIPTS -->
+        <div class="center">
+            <h6><u>Homework 2 - HELLO WORLD</u></h6>
+            <p>
+                <script> 
+                    //this script is written inline
+                    document.write("Hello World!");
+                </script>
+            </p>
             
-
-        <h2>
+            <p>
             <script>
-                // This script is written externally in main.js and is invoked by calling a function.
+                // invoked by calling a function located in helloworld.js 
                 heyThere();
             </script>
-        </h2>
+            </p>
+            <p>-----------------------</p>
+        </div>
+        <br><br>
+
+<!-- Homework 3 - BUTTONS -->
+        <div class="center">
+            <h6><u>Homework 3 - BUTTONS</u></h6>
+            <form action="/buttons.html">
+                <input type="submit" value="Buttons HW" />
+            </form>
+            <p>-----------------------</p>
+            <br><br>
+        </div>
     </body>
 
 </html>
