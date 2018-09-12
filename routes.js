@@ -12,8 +12,8 @@ module.exports = function(app) {
 	app.get('/HW4', function(req, res) {
 		res.sendFile('HW4.html', {root :'./public'})
 	});
-	app.get('/CNIT132_HW1', function(req, res) {
-		res.sendFile('CNIT132_HW1.html', {root :'./public'})
+	app.get('/cnit132hw1', function(req, res) {
+		res.sendFile('cnit132hw1.html', {root :'./public'})
 	});
 
 	app.use(express.static("public"));
