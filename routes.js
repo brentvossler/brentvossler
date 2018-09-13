@@ -15,6 +15,12 @@ module.exports = function(app) {
 	app.get('/cnit132hw1', function(req, res) {
 		res.sendFile('cnit132hw1.html', {root :'./public'})
 	});
+	app.get('/rpg', function(req, res) {
+		res.sendFile('rpg/rpg.html', {root:'./public'})
+	});
+	app.get('/three', function(req, res) {
+		res.sendFile('three/three.html', {root:'./public'})
+	});
 
 	app.use(express.static("public"));
 }
