@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>three.js</title>
+		<style>
+			body { margin: 0; overflow: hidden; }
+			/*canvas { margin: 0; width: 100%; height: 100%; z-index: -99; position: fixed; }*/
+		</style>
+	</head>
+	<body>
+		<!-- create canvas for three.js to use -->
+		<canvas id="myCanvas"></canvas>
+
+		<script src="three/three.js"></script>
+		<script>
+			
+			// Setting the renderer with a <canvas> tag in body
+			var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'), antialias: true});
+			// Set color of canvas
+			// renderer.setClearColor(0x00ff00);
+			// for mobile devices with higher pixel density
+			renderer.setPixelRation(window.devicePixelRatio);
+			// sets canvas size on the document
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+			// example of creating canvas without using <canvas> html tag
+			// var renderer = new THREE.WebGLRenderer();
+			// renderer.setSize( window.innerWidth, window.innerHeight );
+			// document.body.appendChild( renderer.domElement );
+
+			//perspective is how you normall view things, things in distance get smaller...
+			// (parameter1, parameter2, parameter3, parameter4)
+			// param 1 = field of view
+			// param 2 = aspect ratio or size of window
+			// param 3 & 4 = when clipping occurs near and far. objects this close wont be shown and that far wont be shown
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 3000 );
+				//this determins when objects will no longer be rendered near and far
+
+			var scene = new THREE.Scene();
+
+			// below creates new objects/content to screen
+			var geometry = new THREE.BoxGeometry( 100, 100, 100 );
+			var material = new THREE.MeshBasicMaterial( { map: texture } );
+			var mesh = new THREE.Mesh( geometry, material );
+			var texture = new THREE.TextureLoader().load( 'img/woodencrate.jpg' );
+			
+			// now add object to screen
+			scene.add( mesh );
+
+
+			camera.position.set(0, 0, 1000);
+			var animate = function () {
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+				renderer.render( scene, camera );
+				requestAnimationFrame( animate );
+			};
+
+			animate();
+		
+		</script>
+		<!-- <div style="z-index: 1; color: white; margin: 0;"><h1>Brent</h1></div> -->
+	</body>
+</html>

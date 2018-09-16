@@ -7,19 +7,25 @@ module.exports = function(app) {
 	});
 
 	app.get('/buttons', function(req, res) {
-		res.sendFile('buttons.html', {root :'./public'})
+		res.sendFile('/cnit133/buttons.html', {root :'./public'})
 	});
 	app.get('/HW4', function(req, res) {
-		res.sendFile('HW4.html', {root :'./public'})
+		res.sendFile('cnit133/HW4.html', {root :'./public'})
 	});
 	app.get('/cnit132hw1', function(req, res) {
-		res.sendFile('cnit132hw1.html', {root :'./public'})
+		res.sendFile('/cnit132/cnit132hw1.html', {root :'./public'})
 	});
 	app.get('/rpg', function(req, res) {
-		res.sendFile('rpg/rpg.html', {root:'./public'})
+		res.sendFile('projects/rpg/rpg.html', {root:'./public'})
 	});
 	app.get('/three', function(req, res) {
-		res.sendFile('three/three.html', {root:'./public'})
+		res.sendFile('projects/three/three.html', {root:'./public'})
+	});
+	app.get('/cube', function(req, res) {
+		res.sendFile('projects/three/cube.html', {root:'./public'})
+	});
+	app.get('/threesample', function(req, res) {
+		res.sendFile('projects/three/threesample.html', {root:'./public'})
 	});
 
 	app.use(express.static("public"));
