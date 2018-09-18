@@ -13,7 +13,7 @@ module.exports = function(app) {
 		res.sendFile('cnit133/HW4.html', {root :'./public'})
 	});
 	app.get('/cnit132hw1', function(req, res) {
-		res.sendFile('cnit132/cnit132hw1.html', {root :'./public'})
+		res.sendFile('CNIT132/cnit132hw1.html', {root :'./public'})
 	});
 	app.get('/rpg', function(req, res) {
 		res.sendFile('projects/rpg/rpg.html', {root:'./public'})
@@ -34,7 +34,8 @@ module.exports = function(app) {
 		res.sendFile('projects/components/components.html', {root:'./public'})
 	});
 	app.get('/bingo', function(req, res) {
-		res.sendFile('cnit133/bingo.html', {root:'./public'})
+		res.sendFile('CNIT133/bingo.html', {root:'./public'})
 	});
+
 	app.use(express.static("public"));
 }
