@@ -2,11 +2,19 @@
 <html>
 <head>
 	<title>Switch/Case handling</title>
+	<!-- 
+		Brent Vossler
+		CNIT 133
+		Homework 3
+	 -->
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- external JS files  -->
 	<script src="js/buttons.js"></script>
+
 	<!-- Inline JS for extra Credit -->
+	<!-- function, if/else statement to check quiz down below -->
+	
 	<script>
 		function buttonFunction() {
 			if(document.getElementById('fact2').checked == true) {
@@ -19,6 +27,7 @@
 </head>
 
 <body>
+
 	<div class="center alert-padding">
 		<h2>Stupid things the president has said.</h2>
 		<!-- Buttons with switch -->
@@ -30,7 +39,7 @@
 
 		<h2>Quiz</h2>
 		<p><b>Which of the following is a true fact about Trump?</b></p>
-		<!-- Buttons with if/else -->
+		<!-- Buttons which calls a function in button;s.js. Radio buttons set if/else statement to either true or false.-->
 		<div class="left">
 			<form>
 				<input type="radio" id="fact1" name="quiz">

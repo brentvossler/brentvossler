@@ -30,5 +30,11 @@ module.exports = function(app) {
 	app.get('/canvas', function(req, res) {
 		res.sendFile('projects/canvas/canvas.html', {root:'./public'})
 	});
+	app.get('/components', function(req, res) {
+		res.sendFile('projects/components/components.html', {root:'./public'})
+	});
+	app.get('/bingo', function(req, res) {
+		res.sendFile('/cnit133/bingo.html', {root:'./public'})
+	});
 	app.use(express.static("public"));
 }
