@@ -12,24 +12,23 @@ module.exports = function(app) {
 		res.sendFile('projects/projects.html', {root :'./public'})
 	});
 	app.get('/cnit132', function(req, res) {
-		res.sendFile('cnit132/cnit132.html', {root :'./public'})
+		res.sendFile('/cnit132/cnit132.html', {root :'./public'})
 	});
 	app.get('/cnit133', function(req, res) {
 		res.sendFile('/cnit133/cnit133.html', {root :'./public'})
 	});
-		app.get('/helloworld', function(req, res) {
+	app.get('/helloworld', function(req, res) {
 		res.sendFile('CNIT133/helloworld.html', {root:'./public'})
-		});
-		app.get('/buttons', function(req, res) {
+	});
+	app.get('/buttons', function(req, res) {
 		res.sendFile('CNIT133/buttons.html', {root:'./public'})
-		});
-		app.get('/bingo', function(req, res) {
+	});
+	app.get('/bingo', function(req, res) {
 		res.sendFile('CNIT133/bingo.html', {root:'./public'})
-		});
-		app.get('/dice', function(req, res) {
-			res.sendFile('cnit133/dice.html', {root :'./public'})
-		});
-
+	});
+	app.get('/dice', function(req, res) {
+		res.sendFile('cnit133/dice.html', {root :'./public'})
+	});
 	app.get('/cnit132hw1', function(req, res) {
 		res.sendFile('cnit132/cnit132hw1.html', {root :'./public'})
 	});
