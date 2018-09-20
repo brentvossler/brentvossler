@@ -12,7 +12,7 @@ module.exports = function(app) {
 		res.sendFile('projects/projects.html', {root :'./public'})
 	});
 	app.get('/cnit132', function(req, res) {
-		res.sendFile('/CNIT133/cnit132.html', {root :'./public'})
+		res.sendFile('/CNIT132/cnit132.html', {root :'./public'})
 	});
 	app.get('/cnit133', function(req, res) {
 		res.sendFile('/CNIT133/cnit133.html', {root :'./public'})
@@ -50,6 +50,5 @@ module.exports = function(app) {
 	app.get('/components', function(req, res) {
 		res.sendFile('projects/components/components.html', {root:'./public'})
 	});
-
 	app.use(express.static("public"));
 }
