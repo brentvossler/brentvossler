@@ -4,6 +4,7 @@ var _bv_usedNums = new Array(76);
 
 
 function _bv_initAll() {
+	initBannerLink();
 	if (document.getElementById) {
 		document.getElementById("_bv_reload").onclick = _bv_anotherCard;
 		_bv_newCard();
