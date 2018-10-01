@@ -29,11 +29,8 @@ module.exports = function(app) {
 	app.get('/banners', function(req, res) {
 		res.sendFile('CNIT133/banners.html', {root:'./public'})
 	});
-	app.get('/iframe', function(req, res) {
-		res.sendFile('CNIT133/iframe.html', {root :'./public'})
-	});
-	app.get('/iframe2', function(req, res) {
-		res.sendFile('CNIT133/iframe2.html', {root :'./public'})
+	app.get('/popup', function(req, res) {
+		res.sendFile('CNIT133/popup.html', {root :'./public'})
 	});
 	app.get('/dice', function(req, res) {
 		res.sendFile('CNIT133/dice.html', {root :'./public'})
