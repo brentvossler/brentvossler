@@ -1,0 +1,59 @@
+body {
+	background-color: yellow;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+h1 {
+	text-align: center;
+	color: red;
+}
+
+h2 {
+	text-align: right;
+	font-style: italic;
+	color: blue;
+}
+
+h3 {
+	text-align: right;
+	color: red;
+}
+
+p span {
+	color: red;
+}
+
+table {
+	background-color: cyan; 
+	border-spacing: 5px;
+}
+
+th, td {
+	padding: 10px; 
+}
+@keyframes anim {
+    100% {background-color:green; color: white;}
+}
+
+.tAnimation {
+    animation-name: anim;
+    animation-duration: 5s;
+}
+
+.specialH2 {
+	font-size: 3em;
+	line-height: 15px;
+}
