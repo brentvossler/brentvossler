@@ -14,13 +14,13 @@ module.exports = function(app) {
 
 	// CNIT 132
 	app.get('/cnit132', function(req, res) {
-		res.sendFile('/cnit132/cnit132.html', {root :'./public'})
+		res.sendFile('/CNIT132/cnit132.html', {root :'./public'})
 	});
 	app.get('/cnit132hw1', function(req, res) {
-		res.sendFile('cnit132/cnit132hw1.html', {root :'./public'})
+		res.sendFile('CNIT132/cnit132hw1.html', {root :'./public'})
 	});
 	app.get('/cnit132hw2', function(req, res) {
-		res.sendFile('cnit132/cnit132hw2.html', {root :'./public'})
+		res.sendFile('CNIT132/cnit132hw2.html', {root :'./public'})
 	});
 
 	// CNIT 133
