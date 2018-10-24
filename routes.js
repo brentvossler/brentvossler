@@ -22,6 +22,9 @@ module.exports = function(app) {
 	app.get('/cnit132hw2', function(req, res) {
 		res.sendFile('CNIT132/cnit132hw2.html', {root :'./public'})
 	});
+	app.get('/sandbox', function(req, res) {
+		res.sendFile('CNIT132/sandbox.html', {root :'./public'})
+	});
 
 	// CNIT 133
 	app.get('/cnit133', function(req, res) {
