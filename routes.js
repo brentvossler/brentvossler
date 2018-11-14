@@ -11,6 +11,10 @@ module.exports = function(app) {
 	app.get('/resume', function(req, res) {
 		res.sendFile('/resume/resume.html', {root :'./public'})
 	});
+	// Corvette
+	app.get('/corvette', function(req, res) {
+		res.sendFile('/corvette/corvette.html', {root :'./public'})
+	});
 
 	// CNIT 132
 	app.get('/cnit132', function(req, res) {
